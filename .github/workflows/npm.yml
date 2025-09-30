@@ -7,7 +7,7 @@ on:
 
 
 env:
-  NODE_VERSION:'22'
+  NODE_VERSION:  "22"
 
 jobs:
   build-mini-curso-devops:
@@ -22,7 +22,6 @@ jobs:
           node-version: ${{ env.NODE_VERSION}}
       - name: Ajuste path e Adiciona Files
 
-      - name: Ajuste path e Adiciona Files
         run: | 
           pwd && ls -alh 
           cd mini-curso-devops
