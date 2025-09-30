@@ -10,7 +10,7 @@ env:
   NODE_VERSION:'22'
 
 jobs:
-  build-minicurso:
+  build-mini-curso-devops:
     runs-on: ubuntu-latest
     steps:
       - name: Download Repo
@@ -20,7 +20,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION}}
-         - name: Ajuste path e Adiciona Files
+      - name: Ajuste path e Adiciona Files
 
       - name: Ajuste path e Adiciona Files
         run: | 
