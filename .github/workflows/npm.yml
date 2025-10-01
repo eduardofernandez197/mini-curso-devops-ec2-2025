@@ -63,4 +63,4 @@ jobs:
           mkdir -p ~/.ssh
           echo "${{ secrets.KOEHLERLABS_KEY_PROD }}" > ~/.ssh/koehlerlabs-key-prod.pem
           chmod 600 ~/.ssh/koehlerlabs-key-prod.pem
-          scp -i ~/.ssh/koehlerlabs-key-prod.pem  -o StrictHostKeyChecking=no -r dist/* ubuntu@ec2-54-173-132-88.compute-1.amazonaws.com:/var/www/html/mini-curso-devops-ec2-2025
+          scp -i ~/.ssh/koehlerlabs-key-prod.pem  -o StrictHostKeyChecking=no -r dist/* ubuntu@ec2-54-173-132-88.compute-1.amazonaws.com:/var/www/html/mini-curso-devops
